@@ -6,10 +6,15 @@
 		<div class="image-gallery container">
 			<div class="row">
 				<div class="col-lg-6 col-md-12">
-					<h4 class="intro-text">Duis porta, ligula rhoncus euis mod pretiu, 
+					<h4 class="intro-text" id="title1">Duis porta, ligula rhoncus euis mod pretiu, 
 					nisi tellus eleifend odio, luctus viverra sem dolor id sem. 
 					Maecena sa venenatis en m, quis porttitor magna.</h4>
-					<p>Etiam convallis elementum sapien, a aliquam turpis aliquam vitae. 
+					<h4 class="intro-text hide" id="title2">Ligula rhoncus euis mod pretiu, 
+					nisi tellus eleifend odio, luctus viverra sem dolor id sem. 
+					Maecena sa venenatis en m, quis porttitor magna.</h4>
+					<h4 class="intro-text hide" id="title3">Ligula rhoncus euis mod pretiu, 
+					nisi tellus eleifend odio, luctus viverra sem dolor id sem.</h4>
+					<p id="text1">Etiam convallis elementum sapien, a aliquam turpis aliquam vitae. 
 					Pra esent sollici tudin felis vel mi facilisis posuere. 
 					Nulla ultrices facilisis ju sto, non varius nisl semp ervel. 
 					Interdum et malesuada fames ac antei psum primis in faucibus. 
@@ -18,6 +23,16 @@
 					Nulla vehicula vestibulum p urus at rutrum. Pellentesque habitant morbi tristique senectus et netu 
 					s et malesuada fames ac turpis egestas. Curabitur dignissim massa ne c libero scelerisque rutrum. 
 					Curabitur ac purus id elit hendrerit lacinia.</p>
+					<p class="hide" id="text2">Etiam convallis elementum sapien, a aliquam turpis aliquam vitae. 
+					Pra esent sollici tudin felis vel mi facilisis posuere. 
+					Nulla ultrices facilisis ju sto, non varius nisl semp ervel. 
+					Interdum et malesuada fames ac antei psum primis in faucibus. 
+					Phasellus at ante mattis, condimentum velite t, dignissim nunc. 
+					Integer quis tincidunt purus. Duis dignissim maurisv el elit commodo, eu hendrerit leo ultrices. 
+					Nulla vehicula vestibulum p urus at rutrum.</p>
+					<p class="hide" id="text3">Etiam convallis elementum sapien, a aliquam turpis aliquam vitae. 
+					Pra esent sollici tudin felis vel mi facilisis posuere. 
+					Nulla ultrices facilisis ju sto, non varius nisl semp ervel.</p>
 					<div class="indicator-container">
 						<button id="1" class="carousel-indicator">01. Lorem</button>
 						<button id="2" class="carousel-indicator">02. Ipsum</button>
