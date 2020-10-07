@@ -1,45 +1,83 @@
 <?php get_header(); ?>
 
-	<main role="main">
-		<!-- section -->
-		<section>
-
-			<h1><?php the_title(); ?></h1>
-
-		<?php if (have_posts()): while (have_posts()) : the_post(); ?>
-
-			<!-- article -->
-			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-
-				<?php the_content(); ?>
-
-				<?php comments_template( '', true ); // Remove if you don't want comments ?>
-
-				<br class="clear">
-
-				<?php edit_post_link(); ?>
-
-			</article>
-			<!-- /article -->
-
-		<?php endwhile; ?>
-
-		<?php else: ?>
-
-			<!-- article -->
-			<article>
-
-				<h2><?php _e( 'Sorry, nothing to display.', 'html5blank' ); ?></h2>
-
-			</article>
-			<!-- /article -->
-
-		<?php endif; ?>
-
-		</section>
-		<!-- /section -->
-	</main>
-
-<?php get_sidebar(); ?>
-
-<?php get_footer(); ?>
+<main role="main">
+	<!-- section -->
+	<section>
+		<div class="image-gallery container">
+			<div class="row">
+				<div class="col-lg-6 col-md-12">
+					<h4 class="intro-text">Duis porta, ligula rhoncus euis mod pretiu, 
+					nisi tellus eleifend odio, luctus viverra sem dolor id sem. 
+					Maecena sa venenatis en m, quis porttitor magna.</h4>
+					<p>Etiam convallis elementum sapien, a aliquam turpis aliquam vitae. 
+					Pra esent sollici tudin felis vel mi facilisis posuere. 
+					Nulla ultrices facilisis ju sto, non varius nisl semp ervel. 
+					Interdum et malesuada fames ac antei psum primis in faucibus. 
+					Phasellus at ante mattis, condimentum velite t, dignissim nunc. 
+					Integer quis tincidunt purus. Duis dignissim maurisv el elit commodo, eu hendrerit leo ultrices. 
+					Nulla vehicula vestibulum p urus at rutrum. Pellentesque habitant morbi tristique senectus et netu 
+					s et malesuada fames ac turpis egestas. Curabitur dignissim massa ne c libero scelerisque rutrum. 
+					Curabitur ac purus id elit hendrerit lacinia.</p>
+					<div class="indicator-container">
+						<button id="1" class="carousel-indicator">01. Lorem</button>
+						<button id="2" class="carousel-indicator">02. Ipsum</button>
+						<button id="3" class="carousel-indicator">03. Dolores</button>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-12">
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/bild1.png"/>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="form-container">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-md-12">
+					<h4 class="intro-text">Registrera dig</h4>
+					<p>Etiam convallis elementum sapien, a aliquam turpis aliquam vitae. 
+					Pra esent sollici tudin felis vel mi facilisis posuere. 
+					Nulla ultrices facilisis ju sto, non varius nisl semp ervel. 
+					Interdum et malesuada fames ac antei psum primis in faucibus. 
+					Phasellus at ante mattis, condimentum velite t, dignissim nunc. 
+					Integer quis tincidunt purus. Duis dignissim maurisv el elit commodo, eu hendrerit leo ultrices. 
+					Nulla vehicula vestibulum p urus at rutrum. Pellentesque habitant morbi tristique senectus et netu 
+					s et malesuada fames ac turpis egestas. Curabitur dignissim massa ne c libero scelerisque rutrum. 
+					Curabitur ac purus id elit hendrerit lacinia.</p>
+				</div>
+				<div class="col-lg-6 col-md-12">
+					<form>
+						<div class="custom-control custom-checkbox">
+							<div class="form-group">
+								<label for="name">Namn*</label>
+								<input type="text" class="form-control" id="name" required>
+							</div>
+							<div class="form-group">
+								<label for="email">Epost*</label>
+								<input type="email" class="form-control" id="email" required>
+							</div>
+							<div class="form-group">
+								<label for="birth">Födelseår*</label>
+								<input type="text" class="form-control" id="birth" required>
+							</div>
+							<div class="form-group">
+								<label for="pwd">lösenord*</label>
+								<input type="password" class="form-control" id="pwd" required>
+							</div>
+							<div class="form-group">
+								<label for="confirmpwd">Bekräfta lösenord*</label>
+								<input type="password" class="form-control" id="confirmpwd" required>
+							</div>
+							<div class="checkbox">
+								<label><input type="checkbox">Etiam convallis elementum sapien, a aliquam turpis aliquam vitae.</label>
+							</div>
+							<small>Etiam convallis elementum sapien, a aliquam turpis aliquam vitae. Praesent sollicit udi n felis vel mi facilisis posuere. Nulla ultrices facilisis justo, non varius nisl semper vel. I nterdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus at ante matti s, condimentum velit et, dignissim nunc. Integer quis tincidunt purus.</small>
+							<button type="submit" class="btn btn-default">Submit</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- /section -->
+</main>
