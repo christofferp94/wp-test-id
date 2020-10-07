@@ -34,13 +34,15 @@
 					Pra esent sollici tudin felis vel mi facilisis posuere. 
 					Nulla ultrices facilisis ju sto, non varius nisl semp ervel.</p>
 					<div class="indicator-container">
-						<button id="1" class="carousel-indicator">01. Lorem</button>
-						<button id="2" class="carousel-indicator">02. Ipsum</button>
-						<button id="3" class="carousel-indicator">03. Dolores</button>
+						<button id="button1" class="gallery-indicator">01. Lorem</button>
+						<button id="button2" class="gallery-indicator">02. Ipsum</button>
+						<button id="button3" class="gallery-indicator">03. Dolores</button>
 					</div>
 				</div>
 				<div class="col-lg-6 col-md-12">
-					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/bild1.png"/>
+					<img class="gallery-image" id="image1" src="<?php echo get_template_directory_uri(); ?>/assets/images/bild1.png"/>
+					<img class="gallery-image hide" id="image2" src="<?php echo get_template_directory_uri(); ?>/assets/images/bild1.png"/>
+					<img class="gallery-image hide" id="image3" src="<?php echo get_template_directory_uri(); ?>/assets/images/bild1.png"/>
 				</div>
 			</div>
 		</div>
