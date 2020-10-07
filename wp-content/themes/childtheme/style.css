@@ -8,6 +8,11 @@
         Tags: Blank, HTML5, CSS3
 */
 
+@font-face {
+    font-family: "IBMRegular";
+    src: url("assets/fonts/IBMPlexSans-Regular.ttf");
+}
+
 body {
     margin: 0;
     font-size: 1rem;
@@ -16,6 +21,7 @@ body {
     color: #333;
     text-align: left;
     background-color: #fff;
+    font-family: "IBMRegular", sans-serif;
 }
 
 .header {

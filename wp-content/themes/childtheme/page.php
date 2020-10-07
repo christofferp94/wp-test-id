@@ -63,27 +63,27 @@
 					Curabitur ac purus id elit hendrerit lacinia.</p>
 				</div>
 				<div class="col-lg-6 col-md-12">
-					<form>
+					<form action="<?php echo get_template_directory_uri(); ?>/create-user.php" method="post">
 						<div class="custom-control custom-checkbox">
 							<div class="form-group">
 								<label for="name">Namn*</label>
-								<input type="text" class="form-control" id="name" required>
+								<input type="text" class="form-control" name="fname" required>
 							</div>
 							<div class="form-group">
 								<label for="email">Epost*</label>
-								<input type="email" class="form-control" id="email" required>
+								<input type="email" class="form-control" name="email" required>
 							</div>
 							<div class="form-group">
 								<label for="birth">Födelseår*</label>
-								<input type="text" class="form-control" id="birth" required>
+								<input type="text" class="form-control" name="birth" required>
 							</div>
 							<div class="form-group">
 								<label for="pwd">lösenord*</label>
-								<input type="password" class="form-control" id="pwd" required>
+								<input type="password" class="form-control" name="pwd" required>
 							</div>
 							<div class="form-group">
 								<label for="confirmpwd">Bekräfta lösenord*</label>
-								<input type="password" class="form-control" id="confirmpwd" required>
+								<input type="password" class="form-control" name="confirmpwd" required>
 							</div>
 							<div class="checkbox">
 								<label><input type="checkbox">Etiam convallis elementum sapien, a aliquam turpis aliquam vitae.</label>
